@@ -46,6 +46,9 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchI18n>
+    </MtouchI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -89,9 +92,13 @@
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CourseViewController.cs" />
+    <Compile Include="CourseViewController.designer.cs">
+      <DependentUpon>CourseViewController.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\Default-568h@2x.png" />
+    <BundleResource Include="Resources\Default-568h%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -103,4 +110,7 @@
     <Content Include="Entitlements.plist" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <ItemGroup>
+    <InterfaceDefinition Include="CourseViewController.xib" />
+  </ItemGroup>
 </Project>
