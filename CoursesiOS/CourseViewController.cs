@@ -1,5 +1,6 @@
 using System;
 using System.Drawing;
+using CoursesLibrary;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 
@@ -7,6 +8,7 @@ namespace CoursesiOS
 {
 	public partial class CourseViewController : UIViewController
 	{
+	    private CourseManager courseManager;
 		public CourseViewController () : base ("CourseViewController", null)
 		{
 		}
@@ -27,21 +29,29 @@ namespace CoursesiOS
             buttonPrev.TouchUpInside += buttonPrev_TouchUpInside;
             buttonNext.TouchUpInside += buttonNext_TouchUpInside;
 
+
+            courseManager = new CourseManager();
+            courseManager.MoveFirst();
+            UpdateUI();
         }
 
         void buttonPrev_TouchUpInside(object sender, EventArgs e)
         {
-            labelTitle.Text = "Prev Clicked";
-            textDescription.Text = "This is the description that displays when Prev is clicked";
-            imageCourse.Image = UIImage.FromBundle("ps_top_card_01");
+            courseManager.MovePrev();
+            UpdateUI();
         }
         void buttonNext_TouchUpInside(object sender, EventArgs e)
         {
-            labelTitle.Text = "Next Clicked";
-            textDescription.Text = "This is the description that displays when Next is clicked";
-            imageCourse.Image = UIImage.FromBundle("ps_top_card_02");
+            courseManager.MoveNext();
+            UpdateUI();
         }
 
-    }
+	    private void UpdateUI()
+	    {
+	        labelTitle.Text = courseManager.Current.Title;
+            textDescription.Text = courseManager.Current.Description;
+	        imageCourse.Image = UIImage.FromBundle("ps_top_card_02");
+	    }
+	}
 }
 

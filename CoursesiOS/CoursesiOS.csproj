@@ -102,4 +102,10 @@
   <ItemGroup>
     <InterfaceDefinition Include="CourseViewController.xib" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoursesLibrary\CoursesLibrary.csproj">
+      <Project>{f49d82e2-a09e-4dd4-8a17-f7f2eee60b15}</Project>
+      <Name>CoursesLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
