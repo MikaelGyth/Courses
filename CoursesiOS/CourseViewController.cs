@@ -50,7 +50,9 @@ namespace CoursesiOS
 	    {
 	        labelTitle.Text = courseManager.Current.Title;
             textDescription.Text = courseManager.Current.Description;
-	        imageCourse.Image = UIImage.FromBundle("ps_top_card_02");
+	        imageCourse.Image = UIImage.FromBundle(courseManager.Current.Image);
+	        buttonNext.Enabled = courseManager.CanMoveNext;
+	        buttonPrev.Enabled = courseManager.CanMovePrev;
 	    }
 	}
 }

@@ -108,4 +108,10 @@
       <Name>CoursesLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ps_top_card_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ps_top_card_04.png" />
+  </ItemGroup>
 </Project>

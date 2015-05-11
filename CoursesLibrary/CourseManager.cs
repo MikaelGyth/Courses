@@ -1,13 +1,15 @@
 ﻿namespace CoursesLibrary
 {
-    internal class CourseManager
+    public class CourseManager
     {
         private Course[] _courses;
         private int _currentIndex;
+        private readonly int _lastIndex;
 
         public CourseManager()
         {
             _courses = InitCourses();
+            _lastIndex = _courses.Length - 1;
         }
 
         private Course[] InitCourses()
@@ -54,19 +56,42 @@
 
         public void MovePrev()
         {
-            if(_currentIndex > 0)
+            if (CanMovePrev)
                 --_currentIndex;
         }
 
         public void MoveNext()
         {
-            if (_currentIndex < _courses.Length - 1)
+            if (CanMoveNext)
                 ++_currentIndex;
+        }
+
+        public int Lenght
+        {
+            get { return _courses.Length; }
+        }
+
+        public void MoveTo(int position)
+        {
+            if(position <= _lastIndex && position >= 0)
+                _currentIndex = position;
+            else
+                throw new System.IndexOutOfRangeException(System.String.Format("{0} is an invalid position. Must be between 1 and {1}",
+                position, _lastIndex));
         }
 
         public Course Current
         {
             get { return _courses[_currentIndex]; }
+        }
+
+        public bool CanMovePrev
+        {
+            get { return _currentIndex > 0; }
+        }
+        public bool CanMoveNext
+        {
+            get { return _currentIndex < _lastIndex; }
         }
     }
 }
