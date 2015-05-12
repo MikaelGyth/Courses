@@ -9,6 +9,8 @@ namespace CoursesiOS
 	public partial class CourseViewController : UIViewController
 	{
 	    public Course Course { get; set; }
+	    public int CoursePosition { get; set; }
+
 		public CourseViewController () : base ("CourseViewController", null)
 		{
 		}
@@ -17,8 +19,6 @@ namespace CoursesiOS
 		{
 			// Releases the view if it doesn't have a superview.
 			base.DidReceiveMemoryWarning ();
-		    buttonNext.Hidden = true;
-		    buttonPrev.Hidden = true;
 		    // Release any cached data, images, etc that aren't in use.
 		}
 

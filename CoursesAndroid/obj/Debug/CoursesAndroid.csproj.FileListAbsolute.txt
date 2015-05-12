@@ -2,13 +2,10 @@ C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndr
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\bin\Debug\CoursesAndroid.dll
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\bin\Debug\CoursesAndroid.pdb
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\bin\Debug\CoursesAndroid.dll.mdb
-C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\bin\Debug\CoursesAndroid.CoursesAndroid.apk
-C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\bin\Debug\CoursesAndroid.CoursesAndroid-Signed.apk
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\bin\Debug\CoursesLibrary.dll
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\bin\Debug\CoursesLibrary.pdb
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\obj\Debug\CoursesAndroid.dll
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\obj\Debug\CoursesAndroid.pdb
-C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\obj\Debug\android\bin\CoursesAndroid.CoursesAndroid.apk
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\obj\Debug\res\layout\main.xml
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\obj\Debug\res\values\strings.xml
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\obj\Debug\res\drawable\icon.png
@@ -23,3 +20,6 @@ C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndr
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\obj\Debug\res\layout\coursefragment.xml
 C:\Users\Mikael.WIASAD\documents\visual studio 2013\Projects\Courses\CoursesAndroid\obj\Debug\res\layout\courseactivity.xml
+C:\Users\Mikael.WIASAD\Documents\Visual Studio 2013\Projects\Courses\CoursesAndroid\bin\Debug\com.wias.courses.apk
+C:\Users\Mikael.WIASAD\Documents\Visual Studio 2013\Projects\Courses\CoursesAndroid\bin\Debug\com.wias.courses-Signed.apk
+C:\Users\Mikael.WIASAD\Documents\Visual Studio 2013\Projects\Courses\CoursesAndroid\obj\Debug\android\bin\com.wias.courses.apk
