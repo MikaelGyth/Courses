@@ -11,13 +11,13 @@ namespace CoursesiOS
     public partial class AppDelegate : UIApplicationDelegate
     {
         UIWindow window;
-		CourseViewController viewController;
+		CoursePagerViewController viewController;
 
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             window = new UIWindow(UIScreen.MainScreen.Bounds);
 
-			viewController = new CourseViewController();
+            viewController = new CoursePagerViewController();
             window.RootViewController = viewController;
 
             window.MakeKeyAndVisible();
