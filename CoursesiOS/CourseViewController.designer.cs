@@ -13,12 +13,6 @@ namespace CoursesiOS
 	partial class CourseViewController
 	{
 		[Outlet]
-		MonoTouch.UIKit.UIButton buttonNext { get; set; }
-
-		[Outlet]
-		MonoTouch.UIKit.UIButton buttonPrev { get; set; }
-
-		[Outlet]
 		MonoTouch.UIKit.UIImageView imageCourse { get; set; }
 
 		[Outlet]
@@ -29,24 +23,14 @@ namespace CoursesiOS
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (buttonNext != null) {
-				buttonNext.Dispose ();
-				buttonNext = null;
-			}
-
-			if (buttonPrev != null) {
-				buttonPrev.Dispose ();
-				buttonPrev = null;
+			if (imageCourse != null) {
+				imageCourse.Dispose ();
+				imageCourse = null;
 			}
 
 			if (labelTitle != null) {
 				labelTitle.Dispose ();
 				labelTitle = null;
-			}
-
-			if (imageCourse != null) {
-				imageCourse.Dispose ();
-				imageCourse = null;
 			}
 
 			if (textDescription != null) {
